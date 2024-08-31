@@ -1,0 +1,95 @@
+ /* colorir o fundo da pagina e alinhar todo o conteúdo*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #a088ee, #ebe5de); /* Degradê de laranja para pêssego */
+    text-align: center;
+}
+
+/* nessa parte do H1 e main, foi para fazer alguns detalhes, 
+diferenciando o titulo dos parágrafos*/
+
+h1 {
+    text-transform: uppercase;
+    color: #540fa3;
+
+}
+main {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    font-size: 20px;
+}
+
+/*nessa parte utilizamos height para determinar o tamanho que a imagem vai aparecer na pagina
+margin-right e left serve para centralizar ela, deixando no AUTO*/
+
+.imagem_principal img{
+    border-radius: 30%;
+    height: 400px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 80px;
+
+}
+
+.github img{
+    height: 300px;
+
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 225px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.menu li a {
+    color: #540fa3;
+    text-decoration:none;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px
+}
+
+ /*daqui até o final foi o tratamento para a parte de CONTATO
+ foi utilizado max-width na form para não ocupar toda parte horizontal da pagina.*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s
+}
+
+button:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+}
